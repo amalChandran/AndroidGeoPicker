@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/buttonSinglePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Single Point" />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/buttonSinglePoint"
+        android:text="TextStatus" />
+
+    <TextView
+        android:id="@+id/txtSatellites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textStatus"
+        android:layout_below="@+id/textStatus"
+        android:text="TextSatellites" />
+
+    <TextView
+        android:id="@+id/txtLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtSatellites"
+        android:layout_below="@+id/txtSatellites"
+        android:text="txtLatitude" />
+
+    <TextView
+        android:id="@+id/txtLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLatitude"
+        android:layout_below="@+id/txtLatitude"
+        android:text="txtLongitude" />
+
+    <TextView
+        android:id="@+id/txtDateTimeAndProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLongitude"
+        android:layout_below="@+id/txtLongitude"
+        android:text="txtDateTimeAndProvider" />
+
+    <TextView
+        android:id="@+id/txtAltitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDateTimeAndProvider"
+        android:layout_below="@+id/txtDateTimeAndProvider"
+        android:text="txtAltitude" />
+
+    <TextView
+        android:id="@+id/txtSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtAltitude"
+        android:layout_below="@+id/txtAltitude"
+        android:text="txtSpeed" />
+
+    <TextView
+        android:id="@+id/txtDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtSpeed"
+        android:layout_below="@+id/txtSpeed"
+        android:text="txtDirection" />
+
+    <TextView
+        android:id="@+id/txtAccuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDirection"
+        android:layout_below="@+id/txtDirection"
+        android:layout_marginTop="17dp"
+        android:text="txtAccuracy" />
+
+    <TextView
+        android:id="@+id/txtDistanceTravelled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAccuracy"
+        android:layout_below="@+id/txtAccuracy"
+        android:text="txtDistanceTravelled" />
+
+</RelativeLayout>
